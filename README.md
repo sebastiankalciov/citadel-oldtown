@@ -1,7 +1,9 @@
 # Citadel Oldtown
 
----
-## Commands to run (Linux, Ubuntu)
+
+## Technical info
+
+### Commands to run (Linux, Ubuntu)
 If you do not have openjdk23 as default, run:
 ```bash
 export JAVA_HOME=/opt/jdk-23

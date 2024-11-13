@@ -5,9 +5,18 @@
       "name": "seb",
       "bookList": [
         {
+          "title": "The Hobbit",
+          "author": "Tolkien",
           "status": "read",
           "rating": 5,
           "notes": "periculoasa cartea asta"
+        },
+        {
+          "title": "Dracula",
+          "author": "Stoker",
+          "status": "read",
+          "rating": 5,
+          "notes": "smechera rau"
         }
       ]
 

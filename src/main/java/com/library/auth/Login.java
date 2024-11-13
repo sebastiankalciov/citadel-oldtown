@@ -1,7 +1,9 @@
 package com.library.auth;
 
+import com.fasterxml.jackson.core.StreamReadCapability;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.library.books.Book;
+import com.library.display.CustomDisplay;
 import com.library.users.User;
 import com.library.users.UserWrapper;
 
@@ -31,21 +33,18 @@ public class Login {
                 .findFirst();
         return user.orElse(null);
     }
+    private void updateUsers() {
+        // update the users in users.json
+    }
     public boolean addBook(String name, Book book) {
         User user = login(name);
         if (user != null) {
             user.getBookList().add(book);
-
+            //updateUsers();
             return true;
         }
         return false;
     }
-    private void saveUsers() {
-        try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            objectMapper.writeValue(new File(USERS_DB_NAME), users);
-        } catch (IOException error){
-            error.printStackTrace();
-        }
-    }
+
+
 }

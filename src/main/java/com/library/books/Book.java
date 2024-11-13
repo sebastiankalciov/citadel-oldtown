@@ -1,6 +1,6 @@
 package com.library.books;
 
-public class Book {
+public class Book implements Addable, Searchable {
     private String title;
     private String author;
     private String status;
@@ -27,4 +27,14 @@ public class Book {
     public void setRating(Integer rating) {this.rating = rating;}
     public void setNotes(String notes) {this.notes = notes;}
 
+    @Override
+    public void addBook() {
+
+    }
+
+    @Override
+    public Boolean matches(String term) {
+        return title.toLowerCase().contains(term.toLowerCase()) ||
+                author.toLowerCase().contains(term.toLowerCase());
+    }
 }

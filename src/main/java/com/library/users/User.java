@@ -2,6 +2,7 @@ package com.library.users;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.library.books.Book;
+import com.library.display.CustomDisplay;
 
 import java.util.List;
 
@@ -31,4 +32,25 @@ public class User {
     public void addBook(Book book) {
         bookList.add(book);
     }
+
+    public void printAllBooks(CustomDisplay display) {
+        List <Book> books = this.getBookList();
+        display.printBookshelf();
+        if (books == null || books.isEmpty()) {
+            display.printLine("Your knowledge vault is all dusty...");
+            return;
+        }
+        display.printLine("Your knowledge vault: ");
+        display.printSpace(1);
+
+        for (Book book : books) {
+
+            display.printLine("Title: " + book.getTitle());
+            display.printLine("Author: " + book.getAuthor());
+            display.printLine("Rating: " + book.getRating());
+            display.printLine("Notes: " + book.getNotes());
+            display.printSpace(1);
+        }
+    }
+
 }

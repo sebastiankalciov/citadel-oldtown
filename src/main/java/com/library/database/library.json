@@ -1,0 +1,8 @@
+{
+  "books": {
+    "id": 1,
+    "title": "The Hobbit",
+    "author": "Tolkien",
+    "genre": "Fantasy"
+  }
+}

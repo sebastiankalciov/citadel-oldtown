@@ -3,10 +3,8 @@
     {
       "id": 1,
       "name": "seb",
-      "email": "yapper@gmail.com",
       "bookList": [
         {
-          "bookId": 1,
           "status": "read",
           "rating": 5,
           "notes": "periculoasa cartea asta"

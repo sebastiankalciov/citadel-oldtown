@@ -7,6 +7,7 @@ public class Book {
     private Integer rating;
     private String notes;
 
+    public Book() {}
     public Book(String title, String author, String status, Integer rating, String notes) {
         this.title = title;
         this.author = author;

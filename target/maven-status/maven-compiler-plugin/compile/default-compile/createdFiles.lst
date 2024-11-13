@@ -1,0 +1,11 @@
+com/library/Main.class
+com/library/utils/Utils.class
+com/library/books/Book.class
+com/library/auth/Login.class
+com/library/display/CustomDisplay.class
+com/library/books/Searchable.class
+com/library/books/Addable.class
+com/library/auth/Register.class
+com/library/users/User.class
+com/library/users/UserWrapper.class
+com/library/books/EBook.class

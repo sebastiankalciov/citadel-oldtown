@@ -1,17 +1,13 @@
 # Citadel Oldtown
 
+<img src="preview/beta-header.png"/>
 
 ## Technical info
 
 ### Commands to run (Linux, Ubuntu)
-If you do not have openjdk23 as default, run:
-```bash
-export JAVA_HOME=/opt/jdk-23
-export PATH=$JAVA_HOME/bin:$PATH
 
-```
-To run the project:
+To run the project as a .jar:
 ```bash
-java -jar out/artificats/citadel_oldtown_jar/citadel-oldtown.jar
-
+mvn clean package
+java -jar target/citadel-oldtown-1.0-SNAPSHOT.jar
 ```
